@@ -1,6 +1,7 @@
 # 🤖 Cursor AI Config — Backend Agents & Rules
 
 > Sistema de agentes especializados y reglas globales para desarrollo backend con **Java + Spring Boot**, **DDD** y **Arquitectura Hexagonal**.
+Basado en https://cursor.com/docs
 
 ---
 
