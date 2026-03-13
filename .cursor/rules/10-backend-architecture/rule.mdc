@@ -1,0 +1,22 @@
+---
+alwaysApply: true
+---
+# Backend Architecture Rules
+
+## Architectural style
+- Respect Hexagonal / Clean / DDD boundaries already present in the codebase.
+- Domain layer must not depend on infrastructure frameworks.
+- Application layer orchestrates use-cases; domain contains business rules; infrastructure contains IO (DB, HTTP, messaging).
+
+## Dependency direction
+- domain -> (no deps on application/infrastructure)
+- application -> domain
+- infrastructure -> application/domain (adapters)
+
+## Naming / Modularity
+- Use domain language (ubiquitous language) for names.
+- Keep modules cohesive; avoid "god services".
+
+## Changes policy
+- Prefer extending existing patterns over introducing new ones.
+- If refactoring: keep behavior identical unless asked otherwise.

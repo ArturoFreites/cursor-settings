@@ -1,0 +1,21 @@
+---
+alwaysApply: true
+---
+# Testing & Quality Rules
+
+## Tests
+- Add tests for behavior changes and bug fixes.
+- Prefer stable tests: avoid brittle assertions and over-mocking.
+- Use the existing testing stack (JUnit/Mockito/Spring Test) already present.
+
+## What to test
+- Domain logic: unit tests.
+- Integration boundaries: integration tests where valuable (repository/service integration).
+- Edge cases: nulls, empty lists, unexpected inputs, boundary values.
+
+## PR Checklist
+- Code compiles
+- Tests pass
+- No unnecessary file changes
+- No new dependencies
+- No contract breaks (unless requested)

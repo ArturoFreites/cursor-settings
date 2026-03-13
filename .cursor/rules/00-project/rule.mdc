@@ -1,0 +1,25 @@
+---
+alwaysApply: true
+---
+# Project Rules (Backend only)
+
+## Stack
+- Language: Java 17
+- Framework: Spring Boot 3 (if applicable)
+- Build: Gradle or Maven (use what the repo already uses)
+- Database: do not assume; follow existing repository patterns
+
+## Non-negotiables
+- Do NOT add new dependencies unless explicitly requested.
+- Do NOT change public contracts (public methods, REST endpoints, DTO shapes) unless explicitly requested.
+- Do NOT introduce new modules/packages without justification.
+- Prefer explicit, readable code over cleverness.
+
+## Output quality
+- Changes must be minimal, focused, and PR-friendly.
+- Avoid speculative edits across many files.
+- If something is unclear, make the smallest safe assumption and state it.
+
+## Privacy / Security
+- Never request or output credentials, tokens, API keys, secrets.
+- Do not log sensitive data (PII, tokens, passwords).

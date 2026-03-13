@@ -1,0 +1,19 @@
+---
+alwaysApply: true
+---
+# Style, Errors, and Logging
+
+## Code style
+- Prefer small methods with clear names.
+- Avoid side effects in mapping / conversion code.
+- Prefer constructor injection.
+
+## Exceptions and error handling
+- Use existing domain exceptions / error model in the repo.
+- Do not throw generic RuntimeException unless the repo standard does.
+- Keep error messages actionable (what failed, why, what input caused it).
+
+## Logging
+- Use the repository’s logging style and levels.
+- Never log secrets or personal data.
+- Log at boundaries (infrastructure/adapters), not deep in domain logic.
