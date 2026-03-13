@@ -34,7 +34,7 @@ Contratos      — APIs, DTOs o métodos públicos que deben mantenerse
 ## Ejemplo
 
 ```
-@architect Necesito modelar el agregado Loan en el dominio de LendAr.
+@architect Necesito modelar el una venta de una casamodificamos House?
            ¿Lo separamos de Property o lo mantenemos en el mismo contexto?
 ```
 
